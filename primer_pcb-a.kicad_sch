@@ -5,7 +5,7 @@
 	(uuid "f61be368-fbc8-4eda-847b-8d403dc60053")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Connector:Conn_01x01_Pin"
+		(symbol "Connector:Conn_01x02_Pin"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -21,8 +21,8 @@
 					)
 				)
 			)
-			(property "Value" "Conn_01x01_Pin"
-				(at 0 -2.54 0)
+			(property "Value" "Conn_01x02_Pin"
+				(at 0 -5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -47,7 +47,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Generic connector, single row, 01x01, script generated"
+			(property "Description" "Generic connector, single row, 01x02, script generated"
 				(at 0 0 0)
 				(effects
 					(font
@@ -82,7 +82,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "Conn_01x01_Pin_1_1"
+			(symbol "Conn_01x02_Pin_1_1"
 				(rectangle
 					(start 0.8636 0.127)
 					(end 0 -0.127)
@@ -94,9 +94,32 @@
 						(type outline)
 					)
 				)
+				(rectangle
+					(start 0.8636 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
 				(polyline
 					(pts
 						(xy 1.27 0) (xy 0.8636 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy 0.8636 -2.54)
 					)
 					(stroke
 						(width 0.1524)
@@ -124,10 +147,28 @@
 						)
 					)
 				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector:Conn_01x01_Socket"
+		(symbol "Connector:Conn_01x02_Socket"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -143,8 +184,8 @@
 					)
 				)
 			)
-			(property "Value" "Conn_01x01_Socket"
-				(at 0 -2.54 0)
+			(property "Value" "Conn_01x02_Socket"
+				(at 0 -5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -169,7 +210,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Generic connector, single row, 01x01, script generated"
+			(property "Description" "Generic connector, single row, 01x02, script generated"
 				(at 0 0 0)
 				(effects
 					(font
@@ -204,10 +245,22 @@
 					(hide yes)
 				)
 			)
-			(symbol "Conn_01x01_Socket_1_1"
+			(symbol "Conn_01x02_Socket_1_1"
 				(polyline
 					(pts
 						(xy -1.27 0) (xy -0.508 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -2.54) (xy -0.508 -2.54)
 					)
 					(stroke
 						(width 0.1524)
@@ -229,6 +282,18 @@
 						(type none)
 					)
 				)
+				(arc
+					(start 0 -3.048)
+					(mid -0.5058 -2.54)
+					(end 0 -2.032)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(pin passive line
 					(at -5.08 0 0)
 					(length 3.81)
@@ -240,6 +305,24 @@
 						)
 					)
 					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1222,10 +1305,22 @@
 		(uuid "e2f7df26-ab83-4208-aacd-4efaf1bf2311")
 	)
 	(junction
+		(at 252.73 46.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0134f421-1ec3-4f88-bb35-f48e843ee499")
+	)
+	(junction
 		(at 158.75 71.12)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "049b3576-48ce-44d0-a76c-203a656163ef")
+	)
+	(junction
+		(at 252.73 34.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "21e06b12-3fe4-4c10-b453-fe2150540011")
 	)
 	(junction
 		(at 132.08 83.82)
@@ -1246,10 +1341,42 @@
 		(uuid "682a9ac2-925b-4c34-937a-7c7333a70a82")
 	)
 	(junction
+		(at 41.91 30.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b877c021-19b7-4d0b-8cc1-e5bf4a78b56f")
+	)
+	(junction
+		(at 41.91 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f7d06020-fc08-4a35-b32d-077450a02ff4")
+	)
+	(junction
 		(at 132.08 71.12)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ff00b57d-3e1e-475f-aa9f-9fff6c0c052f")
+	)
+	(wire
+		(pts
+			(xy 252.73 46.99) (xy 252.73 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "01341330-cf4d-4733-a8d5-659cd6bbc4e3")
+	)
+	(wire
+		(pts
+			(xy 252.73 34.29) (xy 259.08 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0291bd1e-cdbd-440a-8845-c178d9101411")
 	)
 	(wire
 		(pts
@@ -1260,6 +1387,16 @@
 			(type default)
 		)
 		(uuid "0d0df860-417a-49e5-bc09-72f0a65c16d8")
+	)
+	(wire
+		(pts
+			(xy 259.08 44.45) (xy 252.73 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ea26412-0fd4-44fd-bad7-970d194c8b98")
 	)
 	(wire
 		(pts
@@ -1293,7 +1430,7 @@
 	)
 	(wire
 		(pts
-			(xy 252.73 31.75) (xy 252.73 36.83)
+			(xy 252.73 31.75) (xy 252.73 34.29)
 		)
 		(stroke
 			(width 0)
@@ -1333,6 +1470,16 @@
 	)
 	(wire
 		(pts
+			(xy 29.21 33.02) (xy 41.91 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "72b59193-78da-4444-9e87-7fa834f7fbde")
+	)
+	(wire
+		(pts
 			(xy 158.75 27.94) (xy 158.75 33.02)
 		)
 		(stroke
@@ -1340,16 +1487,6 @@
 			(type default)
 		)
 		(uuid "758edc9c-db8d-4b88-b23e-fa15afe210c8")
-	)
-	(wire
-		(pts
-			(xy 41.91 69.85) (xy 29.21 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7a01415f-bc1d-46c3-9d62-4127b7ebf4e3")
 	)
 	(wire
 		(pts
@@ -1393,13 +1530,43 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 39.37) (xy 41.91 44.45)
+			(xy 41.91 33.02) (xy 41.91 30.48)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "94d5e756-3ec2-462d-9cf2-517fa9309d7f")
+		(uuid "9a5d9e75-de4b-49b8-973e-69cd0606977c")
+	)
+	(wire
+		(pts
+			(xy 252.73 44.45) (xy 252.73 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a037af30-ccf4-4ee1-84ac-7814edb976f5")
+	)
+	(wire
+		(pts
+			(xy 187.96 73.66) (xy 190.5 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a439cfb6-f222-45dd-bff2-66a8dc39a806")
+	)
+	(wire
+		(pts
+			(xy 252.73 36.83) (xy 259.08 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a8aa7373-947c-487e-aef3-5a5cceea77ad")
 	)
 	(wire
 		(pts
@@ -1413,16 +1580,6 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 44.45) (xy 29.21 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b2b17db0-5847-43fe-9900-fa831f01d0c2")
-	)
-	(wire
-		(pts
 			(xy 132.08 55.88) (xy 151.13 55.88)
 		)
 		(stroke
@@ -1430,6 +1587,26 @@
 			(type default)
 		)
 		(uuid "b5656743-5f22-4c8e-96a0-d2495f561eeb")
+	)
+	(wire
+		(pts
+			(xy 29.21 60.96) (xy 41.91 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b5bc9441-389f-4ff0-b11f-761e1b2b7914")
+	)
+	(wire
+		(pts
+			(xy 41.91 60.96) (xy 41.91 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b5ec92d1-0e51-4854-8467-58f271dd589d")
 	)
 	(wire
 		(pts
@@ -1463,7 +1640,7 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 60.96) (xy 41.91 58.42)
+			(xy 41.91 63.5) (xy 41.91 60.96)
 		)
 		(stroke
 			(width 0)
@@ -1483,6 +1660,16 @@
 	)
 	(wire
 		(pts
+			(xy 187.96 80.01) (xy 187.96 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c41cad2c-df02-4257-9593-b12da1200c74")
+	)
+	(wire
+		(pts
 			(xy 132.08 71.12) (xy 121.92 71.12)
 		)
 		(stroke
@@ -1493,23 +1680,23 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 72.39) (xy 41.91 69.85)
+			(xy 104.14 82.55) (xy 104.14 73.66)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "df1380db-f981-46be-82b0-fd9bcb78d890")
+		(uuid "d3c6a357-e0e9-445c-b689-c0849b495a04")
 	)
 	(wire
 		(pts
-			(xy 252.73 48.26) (xy 265.43 48.26)
+			(xy 252.73 34.29) (xy 252.73 36.83)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "eb1e109c-1641-4aca-9305-11e5a4ca4f41")
+		(uuid "eb359566-1539-4fc0-9e37-a775a91fcc36")
 	)
 	(wire
 		(pts
@@ -1523,13 +1710,13 @@
 	)
 	(wire
 		(pts
-			(xy 252.73 50.8) (xy 252.73 48.26)
+			(xy 252.73 46.99) (xy 259.08 46.99)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "fd4ccfc4-1b36-4831-9735-c9b5479b5f1d")
+		(uuid "fd0e2ea0-c0a1-4a7e-94a0-6e76ef35fed3")
 	)
 	(wire
 		(pts
@@ -1541,44 +1728,36 @@
 		)
 		(uuid "fdd6c152-7a80-4106-bf1c-09cebe7d9d75")
 	)
-	(wire
-		(pts
-			(xy 252.73 36.83) (xy 265.43 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fe88793a-c998-45cc-8998-0db823b35d49")
-	)
 	(symbol
-		(lib_id "Connector:Conn_01x01_Socket")
-		(at 99.06 71.12 180)
+		(lib_id "Connector:Conn_01x02_Socket")
+		(at 264.16 34.29 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "15e74504-76f3-4073-9b88-5c6e5cd8d128")
+		(uuid "1829459d-4a42-4995-9ecb-2819e899cfc8")
 		(property "Reference" "J5"
-			(at 99.695 66.04 0)
+			(at 265.43 34.2899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "Pinheader - ženski"
-			(at 99.695 68.58 0)
+		(property "Value" "Conn_01x02_Socket"
+			(at 265.43 36.8299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Horizontal"
-			(at 99.06 71.12 0)
+		(property "Footprint" "primer_lib:PinSocket_1x02_P2.54mm_Polegnut"
+			(at 264.16 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1587,7 +1766,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 99.06 71.12 0)
+			(at 264.16 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1595,17 +1774,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x01, script generated"
-			(at 99.06 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MG elektornik" "https://www.mgelectronic.rs/1-2522"
-			(at 99.06 71.12 0)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 264.16 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1614,78 +1784,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "ce63f216-faca-415e-9418-d94276fc7f07")
+			(uuid "7316b2b8-aeda-4476-add3-9f992f2bebb8")
+		)
+		(pin "2"
+			(uuid "0d594b18-e91d-4bec-a687-406b6abcc189")
 		)
 		(instances
-			(project "primer_pcb-a"
+			(project ""
 				(path "/f61be368-fbc8-4eda-847b-8d403dc60053"
 					(reference "J5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VCC")
-		(at 41.91 39.37 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "16b4efb2-8397-4e86-955b-ef473981e430")
-		(property "Reference" "#PWR08"
-			(at 41.91 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VCC"
-			(at 41.91 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 41.91 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 41.91 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 41.91 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "31755b73-6b7b-4962-93a7-c481ccba7b1e")
-		)
-		(instances
-			(project "primer_pcb-a"
-				(path "/f61be368-fbc8-4eda-847b-8d403dc60053"
-					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -1752,80 +1859,6 @@
 			(project "primer_pcb-a"
 				(path "/f61be368-fbc8-4eda-847b-8d403dc60053"
 					(reference "#PWR06")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_01x01_Pin")
-		(at 195.58 71.12 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2bd0fe12-9ee6-4539-a7df-0137274cab10")
-		(property "Reference" "J6"
-			(at 194.945 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Pinheader - muški"
-			(at 194.945 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Horizontal"
-			(at 195.58 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 195.58 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x01, script generated"
-			(at 195.58 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MG elektronik" "https://www.mgelectronic.rs/kontaktna-letvica-254-m-1x20-90"
-			(at 195.58 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0b976225-86c2-43cc-ac56-c4543dd7e24f")
-		)
-		(instances
-			(project "primer_pcb-a"
-				(path "/f61be368-fbc8-4eda-847b-8d403dc60053"
-					(reference "J6")
 					(unit 1)
 				)
 			)
@@ -1933,7 +1966,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 121.92 70.1548 0)
 			(effects
 				(font
@@ -1976,6 +2009,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Conn_01x02_Socket")
+		(at 195.58 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3f6b044e-13ae-4442-86d1-b751e9807276")
+		(property "Reference" "J8"
+			(at 196.85 71.1199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x02_Socket"
+			(at 196.85 73.6599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "primer_lib:PinSocket_1x02_P2.54mm_Polegnut"
+			(at 195.58 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 195.58 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 195.58 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9dce60a0-a755-4430-93e9-99a886373aa9")
+		)
+		(pin "2"
+			(uuid "bd101c36-364f-4662-971b-293c40ff5e38")
+		)
+		(instances
+			(project "primer_pcb-a"
+				(path "/f61be368-fbc8-4eda-847b-8d403dc60053"
+					(reference "J8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 173.99 71.12 90)
 		(unit 1)
@@ -2001,7 +2104,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 177.8 70.1548 0)
 			(effects
 				(font
@@ -2110,33 +2213,35 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x01_Socket")
-		(at 24.13 69.85 180)
+		(lib_id "Connector:Conn_01x02_Socket")
+		(at 264.16 44.45 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "6d3e9cdb-031c-4f81-a7dc-b4f08481674a")
-		(property "Reference" "J8"
-			(at 24.765 64.77 0)
+		(uuid "6ae7062c-1286-41ed-bc3d-ba449e31e802")
+		(property "Reference" "J7"
+			(at 265.43 44.4499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "Pinheader - ženski"
-			(at 24.765 67.31 0)
+		(property "Value" "Conn_01x02_Socket"
+			(at 265.43 46.9899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Horizontal"
-			(at 24.13 69.85 0)
+		(property "Footprint" "primer_lib:PinSocket_1x02_P2.54mm_Polegnut"
+			(at 264.16 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2145,7 +2250,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 24.13 69.85 0)
+			(at 264.16 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2153,8 +2258,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x01, script generated"
-			(at 24.13 69.85 0)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 264.16 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2163,12 +2268,81 @@
 			)
 		)
 		(pin "1"
-			(uuid "27c2eaff-7245-4cd4-8ed7-b36af80e9646")
+			(uuid "893c1a64-4255-46b0-83b2-d512c03ca515")
+		)
+		(pin "2"
+			(uuid "1c90e5ce-26a4-4a2a-b48a-a98bea55183e")
 		)
 		(instances
 			(project "primer_pcb-a"
 				(path "/f61be368-fbc8-4eda-847b-8d403dc60053"
-					(reference "J8")
+					(reference "J7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 187.96 80.01 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6cc47ca5-f232-4df3-9720-9534518ddea0")
+		(property "Reference" "#PWR09"
+			(at 187.96 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 187.96 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 187.96 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 187.96 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 187.96 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0d04ec0d-1713-4d23-8ea8-25c640e57ae9")
+		)
+		(instances
+			(project "primer_pcb-a"
+				(path "/f61be368-fbc8-4eda-847b-8d403dc60053"
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -2411,7 +2585,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 133.096 92.964 90)
 			(effects
 				(font
@@ -2454,17 +2628,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x01_Pin")
-		(at 270.51 48.26 180)
+		(lib_id "Connector:Conn_01x02_Pin")
+		(at 24.13 30.48 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "9692f247-1bf8-4060-bf0a-ac5f03ea4794")
-		(property "Reference" "J4"
-			(at 269.875 43.18 0)
+		(uuid "ab27cbc9-9e8b-49c5-81bf-7a9fbe702cca")
+		(property "Reference" "J11"
+			(at 24.765 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2472,155 +2646,15 @@
 			)
 		)
 		(property "Value" "Pinheader - muški"
-			(at 269.875 45.72 0)
+			(at 24.765 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Horizontal"
-			(at 270.51 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 270.51 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x01, script generated"
-			(at 270.51 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MG elektronik" "https://www.mgelectronic.rs/kontaktna-letvica-254-m-1x20-90"
-			(at 270.51 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b231d935-d634-4998-8ca2-54b918ecd6cb")
-		)
-		(instances
-			(project "primer_pcb-a"
-				(path "/f61be368-fbc8-4eda-847b-8d403dc60053"
-					(reference "J4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 41.91 72.39 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a1b68f61-ccba-4535-910c-b675f59299d4")
-		(property "Reference" "#PWR09"
-			(at 41.91 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 41.91 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 41.91 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 41.91 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 41.91 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5ce4ebc1-d770-498d-bb4d-3e1fff848756")
-		)
-		(instances
-			(project "primer_pcb-a"
-				(path "/f61be368-fbc8-4eda-847b-8d403dc60053"
-					(reference "#PWR09")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_01x01_Socket")
-		(at 24.13 44.45 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c1a825d3-1698-4aa7-87a6-47431a7f04c1")
-		(property "Reference" "J7"
-			(at 24.765 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Pinheader - ženski"
-			(at 24.765 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Horizontal"
-			(at 24.13 44.45 0)
+		(property "Footprint" "primer_lib:PinHeader_1x02_P2.54mm_Polegnut"
+			(at 24.13 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2629,7 +2663,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 24.13 44.45 0)
+			(at 24.13 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2637,8 +2671,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x01, script generated"
-			(at 24.13 44.45 0)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 24.13 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2646,22 +2680,16 @@
 				(hide yes)
 			)
 		)
-		(property "MG elektornik" "https://www.mgelectronic.rs/1-2522"
-			(at 24.13 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+		(pin "2"
+			(uuid "d316f536-95a5-40c0-9f56-4f86be7507fe")
 		)
 		(pin "1"
-			(uuid "63e45b89-de8d-4037-ad76-f242432dfa40")
+			(uuid "5d21456b-9fc4-46dd-940e-4ecd86c294bb")
 		)
 		(instances
-			(project "primer_pcb-a"
+			(project ""
 				(path "/f61be368-fbc8-4eda-847b-8d403dc60053"
-					(reference "J7")
+					(reference "J11")
 					(unit 1)
 				)
 			)
@@ -2695,7 +2723,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 133.096 47.244 90)
 			(effects
 				(font
@@ -2738,33 +2766,33 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x01_Socket")
-		(at 24.13 30.48 180)
+		(lib_id "Connector:Conn_01x02_Pin")
+		(at 99.06 71.12 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "c9b43ede-e8c5-4f03-b35e-d68ff622d067")
-		(property "Reference" "J2"
-			(at 24.765 25.4 0)
+		(uuid "c4df7357-ed67-48ed-a55c-36517217741f")
+		(property "Reference" "J13"
+			(at 99.695 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "Pinheader - ženski"
-			(at 24.765 27.94 0)
+		(property "Value" "Pinheader - muški"
+			(at 99.695 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Horizontal"
-			(at 24.13 30.48 0)
+		(property "Footprint" "primer_lib:PinHeader_1x02_P2.54mm_Polegnut"
+			(at 99.06 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2773,7 +2801,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 24.13 30.48 0)
+			(at 99.06 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2781,8 +2809,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x01, script generated"
-			(at 24.13 30.48 0)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 99.06 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2790,38 +2818,32 @@
 				(hide yes)
 			)
 		)
-		(property "MG elektornik" "https://www.mgelectronic.rs/1-2522"
-			(at 24.13 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+		(pin "2"
+			(uuid "76111e06-bfd5-4fc8-a561-e7da0e7e619b")
 		)
 		(pin "1"
-			(uuid "5e00aee5-51fb-4b7e-9c86-482ca6d73aa9")
+			(uuid "834ec1fc-326b-452f-8598-f8c3a9081cb3")
 		)
 		(instances
-			(project ""
+			(project "primer_pcb-a"
 				(path "/f61be368-fbc8-4eda-847b-8d403dc60053"
-					(reference "J2")
+					(reference "J13")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x01_Socket")
-		(at 24.13 58.42 180)
+		(lib_id "Connector:Conn_01x02_Pin")
+		(at 24.13 58.42 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "d0e839c1-b204-4a4d-9d41-81a61a600c6e")
-		(property "Reference" "J3"
+		(uuid "c66e6c44-25a2-4098-bf9e-a5a3f8608baf")
+		(property "Reference" "J12"
 			(at 24.765 53.34 0)
 			(effects
 				(font
@@ -2829,7 +2851,7 @@
 				)
 			)
 		)
-		(property "Value" "Pinheader - ženski"
+		(property "Value" "Pinheader - muški"
 			(at 24.765 55.88 0)
 			(effects
 				(font
@@ -2837,7 +2859,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Horizontal"
+		(property "Footprint" "primer_lib:PinHeader_1x02_P2.54mm_Polegnut"
 			(at 24.13 58.42 0)
 			(effects
 				(font
@@ -2855,7 +2877,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x01, script generated"
+		(property "Description" "Generic connector, single row, 01x02, script generated"
 			(at 24.13 58.42 0)
 			(effects
 				(font
@@ -2864,13 +2886,16 @@
 				(hide yes)
 			)
 		)
+		(pin "2"
+			(uuid "6f00e3ea-e426-4a2c-9c92-82ac86d11359")
+		)
 		(pin "1"
-			(uuid "49358875-7ba1-40c9-a8f7-07e5d50f5621")
+			(uuid "147cf3f1-b262-4a3d-803f-7fd825e72faa")
 		)
 		(instances
 			(project "primer_pcb-a"
 				(path "/f61be368-fbc8-4eda-847b-8d403dc60053"
-					(reference "J3")
+					(reference "J12")
 					(unit 1)
 				)
 			)
@@ -2944,91 +2969,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x01_Pin")
-		(at 270.51 36.83 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e0d3b183-e36f-4f0d-89af-6bb3e66e4dd5")
-		(property "Reference" "J1"
-			(at 269.875 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Pinheader - muški"
-			(at 269.875 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Horizontal"
-			(at 270.51 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 270.51 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x01, script generated"
-			(at 270.51 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MG elektronik" "https://www.mgelectronic.rs/kontaktna-letvica-254-m-1x20-90"
-			(at 270.51 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ff640451-476a-4cc4-9ea8-4a9e2e02b788")
-		)
-		(instances
-			(project ""
-				(path "/f61be368-fbc8-4eda-847b-8d403dc60053"
-					(reference "J1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
-		(at 41.91 60.96 0)
+		(at 104.14 82.55 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "f78156fa-070f-48f8-897b-ecbfce6049f1")
-		(property "Reference" "#PWR02"
-			(at 41.91 67.31 0)
+		(uuid "d5ee069d-3711-4aea-8db4-4f252205a402")
+		(property "Reference" "#PWR08"
+			(at 104.14 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3037,7 +2988,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 41.91 66.04 0)
+			(at 104.14 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3045,7 +2996,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 41.91 60.96 0)
+			(at 104.14 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3054,7 +3005,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 41.91 60.96 0)
+			(at 104.14 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3063,7 +3014,73 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 41.91 60.96 0)
+			(at 104.14 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "271c38a3-8649-4a67-8557-79b03fb34f64")
+		)
+		(instances
+			(project "primer_pcb-a"
+				(path "/f61be368-fbc8-4eda-847b-8d403dc60053"
+					(reference "#PWR08")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 41.91 63.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f78156fa-070f-48f8-897b-ecbfce6049f1")
+		(property "Reference" "#PWR02"
+			(at 41.91 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 41.91 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 41.91 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 41.91 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 41.91 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
