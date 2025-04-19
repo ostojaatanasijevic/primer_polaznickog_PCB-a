@@ -1334,6 +1334,107 @@
 			)
 		)
 	)
+	(footprint "MountingHole:MountingHole_3.2mm_M3"
+		(layer "F.Cu")
+		(uuid "5f81410c-51c2-4daa-8a81-1c58547c852c")
+		(at 125 145)
+		(descr "Mounting Hole 3.2mm, no annular, M3")
+		(tags "mounting hole 3.2mm no annular m3")
+		(property "Reference" "H2"
+			(at 0 -4.2 0)
+			(layer "F.SilkS")
+			(uuid "7fb1f298-7581-4627-87ad-3a893de7ee17")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 0 4.2 0)
+			(layer "F.Fab")
+			(uuid "394808ef-a4eb-41c9-adb8-f71d57ed221d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "21871cc3-45fd-40c7-aa2a-92135d2f1302")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c0433242-cf8f-4709-a69b-9ba985679d62")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "MountingHole*")
+		(path "/11aa25ab-0cf1-4c8c-b983-49dc9c405569")
+		(sheetname "/")
+		(sheetfile "primer_pcb-a.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_circle
+			(center 0 0)
+			(end 3.2 0)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(fill no)
+			(layer "Cmts.User")
+			(uuid "3386b72b-d611-4df0-85f9-a5f9814ece56")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 3.45 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "fb053d96-9ffa-45a7-a689-b4fc2cbf1143")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "06445724-3da1-4714-8830-753fa0082be3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "" np_thru_hole circle
+			(at 0 0)
+			(size 3.2 3.2)
+			(drill 3.2)
+			(layers "*.Cu" "*.Mask")
+			(uuid "b833b623-c475-4dbf-9054-06dea77771ea")
+		)
+		(embedded_fonts no)
+	)
 	(footprint "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "63e5d5ba-4a12-43a0-a972-90a54f0030f5")
@@ -2316,6 +2417,107 @@
 				(xyz -180 90 180)
 			)
 		)
+	)
+	(footprint "MountingHole:MountingHole_3.2mm_M3"
+		(layer "F.Cu")
+		(uuid "d69e4efb-6464-4020-ae00-2811f43ffea6")
+		(at 125 105)
+		(descr "Mounting Hole 3.2mm, no annular, M3")
+		(tags "mounting hole 3.2mm no annular m3")
+		(property "Reference" "H1"
+			(at 0 -4.2 0)
+			(layer "F.SilkS")
+			(uuid "60ce1f6a-e5cd-484d-a824-ec5ea8e73e78")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 0 4.2 0)
+			(layer "F.Fab")
+			(uuid "3dad3edb-7daa-4e2e-a948-308a6a7405a0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2898503e-8002-4267-b005-607e9d867934")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "149ac8be-f4f8-43ff-8fb8-1e023ebd26de")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "MountingHole*")
+		(path "/bbd645bf-1d99-4012-9ea0-68ccf5634a3e")
+		(sheetname "/")
+		(sheetfile "primer_pcb-a.kicad_sch")
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_circle
+			(center 0 0)
+			(end 3.2 0)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(fill no)
+			(layer "Cmts.User")
+			(uuid "795cfe33-9dd2-4009-9027-792724c83f8b")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 3.45 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "3a8f4f40-d3d3-4ee0-b197-b2e8e37077b3")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "57544468-8dcf-4577-85c9-3bb5258f8185")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "" np_thru_hole circle
+			(at 0 0)
+			(size 3.2 3.2)
+			(drill 3.2)
+			(layers "*.Cu" "*.Mask")
+			(uuid "60625d17-418a-46ec-a782-c4bc97e646ee")
+		)
+		(embedded_fonts no)
 	)
 	(footprint "primer_lib:PinHeader_1x02_P2.54mm_Polegnut"
 		(layer "F.Cu")
