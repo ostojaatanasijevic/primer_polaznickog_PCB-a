@@ -1503,13 +1503,13 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 71.12) (xy 190.5 71.12)
+			(xy 190.5 71.12) (xy 177.8 71.12)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3816710a-4297-4f77-b96b-8fe04f890ec8")
+		(uuid "50988204-1109-4ddc-94b9-1f6bb16a9d6b")
 	)
 	(wire
 		(pts
@@ -2157,16 +2157,16 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x02_Socket")
-		(at 195.58 71.12 0)
+		(at 195.58 73.66 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "3f6b044e-13ae-4442-86d1-b751e9807276")
 		(property "Reference" "J8"
-			(at 196.85 71.1199 0)
+			(at 196.85 73.6601 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2175,7 +2175,7 @@
 			)
 		)
 		(property "Value" "Conn_01x02_Socket"
-			(at 196.85 73.6599 0)
+			(at 196.85 71.1201 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2184,7 +2184,7 @@
 			)
 		)
 		(property "Footprint" "primer_lib:PinSocket_1x02_P2.54mm_Polegnut"
-			(at 195.58 71.12 0)
+			(at 195.58 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2193,7 +2193,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 195.58 71.12 0)
+			(at 195.58 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2202,7 +2202,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 195.58 71.12 0)
+			(at 195.58 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)

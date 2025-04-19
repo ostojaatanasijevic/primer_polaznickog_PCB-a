@@ -24,7 +24,7 @@
       "otherItems": false,
       "pads": false,
       "text": false,
-      "tracks": false,
+      "tracks": true,
       "vias": false,
       "zones": false
     },
@@ -115,14 +115,14 @@
   },
   "schematic": {
     "selection_filter": {
-      "graphics": true,
-      "images": true,
-      "labels": true,
+      "graphics": false,
+      "images": false,
+      "labels": false,
       "lockedItems": false,
-      "otherItems": true,
-      "pins": true,
-      "symbols": true,
-      "text": true,
+      "otherItems": false,
+      "pins": false,
+      "symbols": false,
+      "text": false,
       "wires": true
     }
   }
